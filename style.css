@@ -1,0 +1,142 @@
+/* Styles de base */
+* {
+	box-sizing: border-box;
+	margin: 5px;
+	padding: 0;
+	
+}
+
+body {
+	font-family: Arial, sans-serif;
+	overflow-x: hidden;
+	height: 100vh;
+}
+
+/* Styles de l'en-tête */
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 9vh;
+	min-height: 15px;
+
+}
+
+
+.banner {
+	background-color: #333;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	min-height: 15px;
+	border-radius: 15px;
+	color: #e8e7e7;
+
+}
+
+
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+nav li {
+	margin: 5px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+	color: #aeadad;
+}
+
+/* Styles du contenu principal données*/
+main {
+	height: calc(100vh - 20px);
+
+}
+/* Tableau */
+table {
+	table-layout:auto;
+	width: 100%;
+	border : solid;
+	border-collapse:collapse;
+	border-color:rgb(38, 31, 40);
+  }
+  
+  td, th {
+	padding: 5px;
+	border: 1px solid rgb(38, 31, 40);
+	word-wrap: break-word;
+	max-width: 150px;
+	overflow-wrap: break-word;
+	font-size: 12px;
+  }
+
+
+  select {
+	width: auto;
+	max-width: 100%;
+	box-sizing: border-box;
+  }
+  
+  th {
+	position: sticky;
+	font-weight: bold;
+	background-color: #5b4a60;
+	color:#fff;
+  }
+  
+#table-filter{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#table-filter label {
+	display: flex; /* afficher le label et le select en ligne */
+	align-items: center; /* aligner les éléments verticalement */
+  }
+  
+  #table-filter select {
+	margin-left: 8px; /* ajouter une marge à gauche pour séparer le label et le select */
+  }
+  
+  #table-container {
+	width : 99%;
+	margin-top: 11vh;	
+	position: relative;
+  }
+
+#container {
+	height: 85vh; /* hauteur du container en fonction de la taille de la fenêtre */
+	position: fixed;
+	bottom: 2vh; /* fixe le container en bas de la fenêtre */
+	left: 0;
+	right: 0;
+    align-items: center;
+    display: flex;
+}
+
+
+#map {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    z-index: 9999;
+	border-radius: 15px;
+    }
+
+	.highlight {
+		background-color: #d6c7db;
+	  }
